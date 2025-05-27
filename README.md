@@ -280,7 +280,8 @@ The Liberty files are present in the library path,<br />
 Step 2 : Creating an SDC File<br />
 Step 3 : Performing Synthesis<br />
 # SIMULATION WAVEFORM:
-![Screenshot 2025-05-27 133333](https://github.com/user-attachments/assets/7397b89e-617f-41e3-84a8-f39300b4047d)
+![WhatsApp Image 2025-05-27 at 14 51 07_2bd8d034](https://github.com/user-attachments/assets/e4393de5-93fc-4ef1-8c75-dc744beb6c49)
+
 # SYNTHESIS RTL SCHEMATIC:  
 ![Screenshot 2025-05-27 134238](https://github.com/user-attachments/assets/5d08b960-b27c-4f20-90e1-d4113865e8af)
 # AREA REPORT:
