@@ -266,36 +266,34 @@ set_clock_uncertainty 0.01 [get_ports "clk"]
 set_input_delay -max 0.8 [get_ports "rst"] -clock [get_clocks "clk"]
 set_output_delay -max 0.8 [get_ports "count"] -clock [get_clocks "clk"]
 ```
-i→ Creates a Clock named “clk” with Time Period 2ns and On Time from t=0 to t=1.
-ii, iii → Sets Clock Rise and Fall time to 100ps.
-iv → Sets Clock Uncertainty to 10ps.
-v, vi → Sets the maximum limit for I/O port delay to 1ps.
-The Liberty files are present in the library path,
-• The Available technology nodes are 180nm ,90nm and 45nm.
-• In the terminal, initialise the tools with the following commands if a new terminal is being used.
-◦ csh
-◦ source /cadence/install/cshrc
-• The tool used for Synthesis is “Genus”. Hence, type “genus -gui” to open the tool.
-• Genus Script file with .tcl file Extension commands are executed one by one to synthesize the netlist.
-Step 2 : Creating an SDC File
-Step 3 : Performing Synthesis
-# simulation waveform:
+i→ Creates a Clock named “clk” with Time Period 2ns and On Time from t=0 to t=1.<br />
+ii, iii → Sets Clock Rise and Fall time to 100ps.<br />
+iv → Sets Clock Uncertainty to 10ps.<br />
+v, vi → Sets the maximum limit for I/O port delay to 1ps.<br />
+The Liberty files are present in the library path,<br />
+• The Available technology nodes are 180nm ,90nm and 45nm.<br />
+• In the terminal, initialise the tools with the following commands if a new terminal is being used.<br />
+◦ csh<br />
+◦ source /cadence/install/cshrc<br />
+• The tool used for Synthesis is “Genus”. Hence, type “genus -gui” to open the tool.<br />
+• Genus Script file with .tcl file Extension commands are executed one by one to synthesize the netlist.<br />
+Step 2 : Creating an SDC File<br />
+Step 3 : Performing Synthesis<br />
+# SIMULATION WAVEFORM:
 ![Screenshot 2025-05-27 133333](https://github.com/user-attachments/assets/7397b89e-617f-41e3-84a8-f39300b4047d)
-
-# Synthesis RTL Schematic 
+# SYNTHESIS RTL SCHEMATIC:  
 ![Screenshot 2025-05-27 134238](https://github.com/user-attachments/assets/5d08b960-b27c-4f20-90e1-d4113865e8af)
-# area report
-
+# AREA REPORT:
 ![Screenshot 2025-05-27 134604](https://github.com/user-attachments/assets/86ea6402-f7d7-471a-92cd-fd7fe8e9c93a)
-# timing report:
+# TIMING REPORT:
 ![Screenshot 2025-05-27 135217](https://github.com/user-attachments/assets/4b0ebc9b-6714-4127-bece-9f870bf641c5)
-# power report:
+# POWER REPORT:
 ![Screenshot 2025-05-27 135151](https://github.com/user-attachments/assets/36673670-aeb5-4f0e-b8f7-d6e8b30585a1)
-# floorplanning:
+# FLOORPLANNING:
 ![WhatsApp Image 2025-05-27 at 14 26 49_133d974d](https://github.com/user-attachments/assets/82d77a59-52be-4e89-9dba-eabf1fe4aab6)
 
 ![WhatsApp Image 2025-05-27 at 14 26 48_68d0733d](https://github.com/user-attachments/assets/39bf891e-fb3d-41c9-a829-6d6cdf45409f)
-# result:
+# RESULT:
 The functionality of a UART was successfully verified using a test bench and simulated with the nclaunch tool and genus and for innovus created the  floorplanning.
 
 
